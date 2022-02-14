@@ -21,12 +21,10 @@ fun main() {
   println(f1(stars2))
   // Data classes can be keys in hashed data structures,
   // because they define equals() and hashCode():
-  val m: HashMap<Stars, String> = HashMap()
-  m[stars1] = "stars1"
-  m[stars2] = "stars2"
+  val m = mapOf(Stars(4) to "four", Stars(9) to "nine")
   println(m)
   // Automatically-generated copy() still
   // performs the constructor check:
-  val copied = stars1.copy(n=11)
+  val copied = stars1.copy(n=12)
   println(copied)
 }

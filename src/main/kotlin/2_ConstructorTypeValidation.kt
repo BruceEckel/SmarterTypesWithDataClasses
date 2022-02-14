@@ -10,13 +10,9 @@ class Stars(val n: Int) {
   override fun toString() = "Stars($n)"
 }
 
-fun f1(stars: Stars): Stars {
-  return Stars(stars.n * 10)
-}
+fun f1(stars: Stars) = Stars(stars.n * 10)
 
-fun f2(stars: Stars): Stars {
-  return Stars(stars.n + 10)
-}
+fun f2(stars: Stars) = Stars(stars.n + 10)
 
 fun main() {
   val stars1 = Stars(6)

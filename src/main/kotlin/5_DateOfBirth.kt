@@ -12,14 +12,14 @@ enum class Month(private val maxDays: Int) {
   JANUARY(31), FEBRUARY(28), MARCH(31), APRIL(30),
   MAY(31), JUNE(30), JULY(31), AUGUST(31), SEPTEMBER(30),
   OCTOBER(31), NOVEMBER(30), DECEMBER(31);
-  fun checkDay(day: Day) =
-    range(day.n <= maxDays, "Month($this) $day")
   companion object {
     fun number(n: Int): Month =
       if (range(n in 1..12, "Month.number($n)"))
         values()[n]
       else NONE
   }
+  fun checkDay(day: Day) =
+    range(day.n <= maxDays, "Month($this) $day")
 }
 
 data class Year(val n: Int) {

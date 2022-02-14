@@ -7,13 +7,9 @@ data class Stars(val n: Int) {
   }
 }
 
-fun f1(stars: Stars): Stars {
-  return Stars(stars.n * 10)
-}
+fun f1(stars: Stars) = Stars(stars.n * 10)
 
-fun f2(stars: Stars): Stars {
-  return Stars(stars.n + 10)
-}
+fun f2(stars: Stars) = Stars(stars.n + 10)
 
 fun main() {
   val stars1 = Stars(6)
@@ -29,4 +25,8 @@ fun main() {
   m[stars1] = "stars1"
   m[stars2] = "stars2"
   println(m)
+  // Automatically-generated copy() still
+  // performs the constructor check:
+  val copied = stars1.copy(n=11)
+  println(copied)
 }

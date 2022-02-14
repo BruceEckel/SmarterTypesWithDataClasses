@@ -4,7 +4,8 @@ import check.valid
 data class FullName(val name: String) {
   init {
     println("Checking FullName $name")
-    valid(name.split(" ").size > 1,
+    valid(
+      name.split(" ").size > 1,
       "$name needs at least first and last names"
     )
   }
@@ -22,7 +23,11 @@ data class EmailAddress(val address: String) {
   }
 }
 
-data class Person(val name: FullName, val dateOfBirth: BirthDate, val email: EmailAddress) {
+data class Person(
+  val name: FullName,
+  val dateOfBirth: BirthDate,
+  val email: EmailAddress
+) {
   init {
     println("TODO: Check Person")
   }

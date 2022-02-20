@@ -1,4 +1,4 @@
-// 1-10 stars for giving feedback
+// Using 1-10 stars for customer feedback.
 import check.range
 
 fun f1(stars: Int): Int {

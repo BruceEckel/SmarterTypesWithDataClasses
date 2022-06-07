@@ -7,4 +7,5 @@ using Kotlin's `data class` to guarantee that each constructed object is a
 legal value. Your code improves dramatically because now you validate the object
 in one place, at construction. When `data class` fields are `val`s, an object 
 cannot be morphed into an illegal value. A typed object
-never needs to be re-checked by any function that receives it as an argument.
+never needs to be re-checked by any function that receives it as an argument or 
+returns it as a result.

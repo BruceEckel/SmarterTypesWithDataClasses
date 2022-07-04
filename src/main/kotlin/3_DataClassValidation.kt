@@ -15,6 +15,7 @@ fun f2(stars: Stars) = Stars(stars.n * 5)
 
 fun main() {
   val stars1 = Stars(4)
+  println(stars1.n)  // n is directly accessible
   // stars1.n = 99;  // Can't modify n
   println(stars1)
   println(f1(stars1))

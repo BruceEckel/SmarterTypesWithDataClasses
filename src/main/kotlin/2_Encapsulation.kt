@@ -1,3 +1,4 @@
+// 2_Encapsulation.kt
 package example2
 // Encapsulation with pre- and post-condition checks
 import check.range
@@ -11,12 +12,14 @@ class Stars(n: Int) {
     this.n = n
   }
   fun f1(stars: Int): Int {
+    // Assume this.n is OK
     condition(stars) // Precondition
     n = stars + 5
     condition(n) // Postcondition
     return n
   }
   fun f2(stars: Int): Int {
+    // Assume this.n is OK
     condition(stars) // Precondition
     n = stars * 5
     condition(n) // Postcondition

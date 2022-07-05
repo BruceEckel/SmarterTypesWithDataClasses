@@ -1,3 +1,4 @@
+// Check.kt
 package check
 
 fun valid(exp: Boolean, errInfo: String): Boolean {

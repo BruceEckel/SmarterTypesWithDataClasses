@@ -1,4 +1,5 @@
-// For a type with a "small" set of values, use an enum
+// 5_DateOfBirth.kt
+// For a type with a "small" set of pre-definable values, use an enum
 import check.range
 
 data class Day(val n: Int) {

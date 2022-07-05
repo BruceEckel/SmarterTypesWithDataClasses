@@ -25,6 +25,7 @@ class Stars(n: Int) {
     condition(n) // Postcondition
     return n
   }
+  // What about overriding?
   override fun toString() = "Stars($n)"
 }
 

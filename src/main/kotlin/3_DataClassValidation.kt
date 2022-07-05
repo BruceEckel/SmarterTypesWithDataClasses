@@ -8,6 +8,7 @@ data class Stars(val n: Int) {
     range(n in 1..10, n)
   }
 }
+// Failure happens at the point of creation
 
 fun f1(stars: Stars) = Stars(stars.n + 5)
 

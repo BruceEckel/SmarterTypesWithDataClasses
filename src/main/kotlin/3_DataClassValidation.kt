@@ -1,6 +1,7 @@
 // 3_DataClassValidation.kt
 // "A type is a set of values"
 // "Make illegal values unrepresentable"
+// What about value classes?
 import check.range
 
 data class Stars(val n: Int) {

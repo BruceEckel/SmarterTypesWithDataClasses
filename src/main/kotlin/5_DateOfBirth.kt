@@ -1,5 +1,7 @@
 // 5_DateOfBirth.kt
-// For a type with a "small" set of pre-definable values, use an enum
+// Enums for types with a "small" set of pre-definable values.
+// An enum is also a type.
+// "Leap years are left as an exercise."
 import check.range
 
 data class Day(val n: Int) {
@@ -8,8 +10,9 @@ data class Day(val n: Int) {
   }
 }
 
+// For comparison, try rewriting using data classes.
 enum class Month(private val maxDays: Int) {
-  NONE(0),  // Only needed for this example
+  NONE(0),  // Only needed for this example (normally an exception)
   JANUARY(31), FEBRUARY(28), MARCH(31), APRIL(30),
   MAY(31), JUNE(30), JULY(31), AUGUST(31), SEPTEMBER(30),
   OCTOBER(31), NOVEMBER(30), DECEMBER(31);
